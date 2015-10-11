@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 1 - ECommerce</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<!-- Jquery UI -->
+	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div id="header">
+		<nav class="navbar navbar-default" navbar-fixed-top role="navigation">
+			<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" id="homepage">HomeByMe</a>
+				</div>
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">ABOUT</a></li>
+						<a href="#" class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#contact-modal" >CONTACT</a>
+					</ul>
+				</div> <!-- /.navbar-collapse -->
+			</div> <!-- /.container -->
+		</nav>
+	</div> <!-- #header -->
+	
+	<div id="content">
+		<div id="left-content" class="col-md-3">
+		    <ul class="nav nav-pills">
+		    	<li id="appartment-selector">
+		    		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-home"></span><span class="caret"></span></a>
+					<ul class="dropdown-menu">
+			            <li><a href="#">Sunflower</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Moonlight</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Martian</a></li>
+		          	</ul>
+		    	</li>
+		    	<li id="room-selector">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Appartment<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Living Room</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Kitchen</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Dining Room</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Bathroom</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Bedroom</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Other Room</a></li>
+		          </ul>
+		        </li>
+		    	<li id="furniture-selector">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Room<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Tables</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Chairs</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Accessories</a></li>
+		          </ul>
+		        </li>
+		        <li id="item-selector">
+		          <a href="#">Table</a>
+		        </li>
+		    </ul> <!-- /.nav-pills -->
+		    <ul class="list-group scrollable-list" id="list-item">
+			  <li class="list-group-item">
+			  	<div class="row">
+				  <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Bedroom/Beds/(1).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				 <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Otherroom/Office/(9).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Diningroom/DiningSets/(6).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+			  	<div class="row">
+				  <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Diningroom/Chairs/(9).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				 <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Diningroom/Tables/(12).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Kitchen/Refrigerators/(3).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+			  	<div class="row">
+				  <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Kitchen/Sinks/(3).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				 <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Bathroom/Tubs/(9).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				  <div class="col-md-4">
+				    <div class="thumbnail">
+				      <img src="../Room/Bathroom/Showers/(6).jpg" alt="...">
+				    </div>
+				    <p class="label label-info text-center col-md-offset-2">10.00$</p>
+				  </div>
+				</div>
+			  </li>
+			</ul> <!-- /.scrollable-list -->
+		</div> <!-- #left-content -->
+
+		<div id="right-content" class="col-md-9">
+			<div class="container-fluid">
+				<div class="row">
+					<ul class="nav navbar-left" id="tool">
+						<li>
+							<h5>
+								<span class="label label-default">Tools</span>
+							</h5>
+						</li>
+						<li>
+							<button type="button" class="btn btn-default btn-xs" id="btn-rotate">
+								<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> Rotate
+							</button>
+						</li>
+						<li>
+							<button type="button" class="btn btn-default btn-xs" id="btn-remove">
+								<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Remove
+							</button>
+						</li>
+					</ul>
+					<ul class="nav nav-pills navbar-right">
+						<li>
+							<button type="button" class="btn btn-primary fileUpload" data-toggle="tooltip" data-placement="left" title="Choose 2 files Summary & Working-space">UPLOAD
+							    <input type="file" class="upload" id="btn-choose" multiple="multiple"/>
+							</button>
+						</li>
+						<li><button class="btn btn-primary" id="btn-save">SAVE</button></li>
+						<li>
+							<div class="btn-group">
+								<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SUMMARY</button>
+								<!-- <div class="dropdown-menu table-summary"> -->
+								<table class="table table-hover dropdown-menu scrollable-menu" id="summary">
+									<!-- <table class="table table-striped table-header"> -->
+										<thead>
+											<tr class="success">
+												<th>No.</th>
+												<th>Name</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+									<!-- </table> -->
+									<!-- <table class="table table-striped table-body"> -->
+										<tbody>
+											
+										</tbody>
+									<!-- </table> -->
+									<!-- <table class="table table-striped table-footer"> -->
+										<tfoot>
+											<tr class="success">
+												<th>Total</th>
+												<th></th>
+												<th class="sumTotal">0$</th>
+											</tr>
+										</tfoot>
+									<!-- </table> -->
+								</table>
+							</div>
+						</li>
+					</ul> <!-- /.nav-pills -->
+				</div>
+			</div>
+			<div class="container-fluid working-space" id="working-space">
+			</div>
+		</div> <!-- /.right-content -->
+	</div> <!-- #content -->
+	
+	<div id="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1" style="padding-right: 5px; width: 75px;">
+					<a href="#">
+						<img src="../images/logo.png" style="width: 50px; height: 50px;" id="logo">
+					</a>
+				</div>
+				<div class="col-md-2" style="padding-left: 5px; padding-top: 5px">
+					<h5>Come with us to make the difference
+						<span class="glyphicon glyphicon-ok"></span>
+					</h5>
+				</div>
+				<div class="col-md-6 text-center">
+					<br>
+					<h5>Copyright © 2014 <a href="#">TCL*</a> / All rights reserved.</h5>
+				</div>
+				<div class="col-md-3 text-right">
+		        	<h5>Follow us, we are awesome!</h5>
+	                <a href="https://www.facebook.com/cse.thanhcong" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+		            <a href="https://twitter.com/cong30082011" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+		            <a href="https://plus.google.com/u/0/104660094461699297873/posts" target="_blank"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+		            <a href="mailto:cse.thanhcong@gmail.com" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+				</div>
+			</div>
+		</div>
+	</div> <!-- #footer -->
+
+	<div id="contact-modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	    	<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Info</h4>
+	        </div>
+
+	      	<div class="modal-body">
+		        <!-- <address> -->
+				  <strong>TCL* Team Members:</strong><br>
+				  Pham Thanh Cong - 51200399<br>
+				  Tran Van Tai - 51203241<br>
+				  Nguyen Diep Phuong Linh - 51201899<br>
+				  Lai Minh Lam - 51201837<br>
+				<!-- </address> -->
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	  <!-- Modal -->
+	</div>
+
+<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery-rotate.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		/*Tooltip init*/
+		$('[data-toggle="tooltip"]').tooltip();
+		/*Hide Tools*/
+		$('#tool').hide();
+
+		/*Display the left panel with correct responding*/
+		$('#room-selector').hide();
+		$('#furniture-selector').hide();
+		$('#item-selector').hide();
+
+		// global var-used for bill processing
+		var count = 0;
+
+		$('#appartment-selector ul li a').hover(
+			function() {
+			/* Stuff to do when the mouse enters the element */
+			var liIndex = $(this).parent().index();
+			switch (liIndex) {
+				case 0: 
+					$('.working-space').css({
+						'background-image' : 'url("../Appartment/Real/Cidrap.png")',
+						'background-position' : 'center'
+					});
+					break;
+				case 2: 
+					$('.working-space').css({
+						'background-image' : 'url("../Appartment/Real/Idico.png")',
+						'background-position' : 'center'
+					});
+					break;
+				case 4: 
+					$('.working-space').css({
+						'background-image' : 'url("../Appartment/Real/Oaks.png")',
+						'background-position' : 'center'
+					});
+					break;
+			}
+		}, function() {
+			/* Stuff to do when the mouse leaves the element */
+			// $('.working-space').css('background-image', 'url("../Appartment/Temp/Cidrap.png")');
+		});
+
+		$('#appartment-selector ul li a').on('click', function(event) {
+			event.preventDefault();
+			var liIndex = $(this).parent().index();
+			switch (liIndex) {
+				case 0: 
+					$('.working-space').css('background-image', 'url("../Appartment/Temp/Cidrap.png")');
+					break;
+				case 2: 
+					$('.working-space').css('background-image', 'url("../Appartment/Temp/Idico.png")');
+					break;
+				case 4: 
+					$('.working-space').css('background-image', 'url("../Appartment/Temp/Oaks.png")');
+					break;
+			}
+
+			var appartment = $(this).text();
+
+			$('#room-selector>a').html(appartment + '<span class="caret"></span>');
+			$('#room-selector').show('400', function() {
+				
+			});
+			$('#furniture-selector').fadeOut('400', function() {
+				$('#item-selector').fadeOut('400', function() {
+				
+				});
+			});
+			
+		});
+
+		$('#room-selector ul li a').on('click', function(event) {
+			event.preventDefault();
+			var room = $(this).text();
+			var $furniture_selector = $('#furniture-selector>ul');
+
+			$('#furniture-selector>a').html(room + '<span class="caret"></span>');
+			switch (room) {
+				case "Living Room":
+					$furniture_selector.children().remove();
+					$furniture_selector.append('<li><a href="#">Accent Tables</a></li>' +
+		            							'<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Media</a></li>' +
+									            '<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Sofas</a></li>' +
+									            '<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Storages</a></li>');
+					break;
+				case "Dining Room":
+					$furniture_selector.children().remove();
+					$furniture_selector.append('<li><a href="#">Chairs</a></li>' +
+		            							'<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Dining Sets</a></li>' +
+									            '<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Tables</a></li>');
+					break;
+				case "Kitchen":
+					$furniture_selector.children().remove();
+					$furniture_selector.append('<li><a href="#">Cabinets</a></li>' +
+		            							'<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Refrigerators</a></li>' +
+									            '<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Sinks</a></li>');
+					break;
+				case "Bathroom":
+					$furniture_selector.children().remove();
+					$furniture_selector.append('<li><a href="#">Showers</a></li>' +
+		            							'<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Toilets</a></li>' +
+									            '<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Tubs</a></li>' +
+									            '<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Vanities</a></li>');
+					break;
+				case "Bedroom":
+					$furniture_selector.children().remove();
+					$furniture_selector.append('<li><a href="#">Armoirs</a></li>' +
+		            							'<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Beds</a></li>' +
+									            '<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Night Tables</a></li>');
+					break;
+				case "Other Room":
+					$furniture_selector.children().remove();
+					$furniture_selector.append('<li><a href="#">Laundry</a></li>' +
+		            							'<li role="separator" class="divider"></li>' +
+									            '<li><a href="#">Office</a></li>');
+					break;
+			}
+			$('#furniture-selector').show('400', function() {});
+			$('#item-selector').fadeOut('400', function() {});
+		
+		});
+
+		$('#furniture-selector').on('click', 'ul li a',function(event) {
+			event.preventDefault();
+			// prevent user from switch appartment
+			$('#appartment-selector').addClass('disabled').css('pointer-events', 'none');
+
+			var item = $(this).text();
+
+			$('#item-selector>a').html(item);
+			$('#item-selector').show('400', function(){});
+
+			// Avoid caching JSON from jQuery
+			$.ajaxSetup({cache: false});
+			$.getJSON('../JSON/item.json', function (data) {
+				var numberOfItems = data[item].length;
+				var numberOfRows = numberOfItems / 3;
+				if (numberOfItems % 3 > 0) 
+					numberOfRows++;
+
+				$('#list-item').children().remove();
+				for (var i=0; i<numberOfRows; i++) {
+					$('#list-item').append('<li class="list-group-item"><div class="row"><div class="col-md-4"><a href="#" class="thumbnail"><img src="'+data[item][i*3].src+'" alt="..."></a><p class="label label-info text-center col-md-offset-1">'+data[item][i*3].price+'</p></div><div class="col-md-4"><a href="#" class="thumbnail"><img src="'+data[item][i*3+1].src+'" alt="..."></a><p class="label label-info text-center col-md-offset-1">'+data[item][i*3+1].price+'</p></div><div class="col-md-4"><a href="#" class="thumbnail"><img src="'+data[item][i*3+2].src+'" alt="..."></a><p class="label label-info text-center col-md-offset-1">'+data[item][i*3+2].price+'</p></div></div></li>');
+				}
+
+				$('.thumbnail').draggable({
+					cursor: 'move',
+					helper: 'clone',
+					revert: 'invalid',
+					start: function(event, ui) {
+						ui.helper.animate({
+							width: 64,
+							height: 62
+						});
+					},
+					zIndex: '99',
+					cursorAt: {left: 32, top: 31}
+				});
+
+				$('#working-space').droppable({
+					accept: '.thumbnail, .thumbnail-redrag',
+					drop: function(event, ui) {
+						// Process with thumbnail class
+						if (ui.draggable.parent().find('a').hasClass('thumbnail')) {
+							// Process Bill
+							count = $('#summary tbody tr').length;
+							count++ ;
+							var tbody = $('#summary').children('tbody');
+							var table = tbody.length ? tbody : $('#summary');
+							var price = ui.draggable.parent().find('.label').html();
+							var elDrag = ui.draggable.parent().find('.ui-draggable-dragging img').attr('src');
+
+							var src = elDrag.split('/');
+							var pre = src[src.length -2];
+							var last = src[src.length - 1].split('.')[0];
+							var name = pre +' - '+ last;
+
+							table.append('<tr><td>'+ count +'</td><td>'+ name +'</td><td>'+ price +'</td></tr>');
+
+							// Total
+							$("table tfoot th").each(function(columnIndex) {
+							    var totalsElement = $(this);
+
+							    if (totalsElement.hasClass("sumTotal")) {
+							        var sum = 0.0;
+							        totalsElement.parents("table").find("tbody tr").each(function() {
+							            sum += parseFloat($(this).children("td").eq(columnIndex).html());
+							        });
+							        totalsElement.html(sum + '$');
+							    }
+							});
+							// End-Process Bill
+
+							var uiDrag = ui.draggable.parent().find('.ui-draggable-dragging img').attr('src');
+							var setImage = uiDrag.replace('jpg', 'png');
+
+							var imgWidth = ui.draggable.parent().find('.ui-draggable-dragging').css('width');
+							var imgHeight = ui.draggable.parent().find('.ui-draggable-dragging').css('height');
+
+							var imgLeftPos = ui.draggable.parent().find('.ui-draggable-dragging').css('left');
+							var imgTopPos = ui.draggable.parent().find('.ui-draggable-dragging').css('top');
+
+							// get the center coord of image
+							var centerLeftPos = (parseInt(imgLeftPos.replace(/px/, "")) + parseInt(imgWidth.replace(/px/, "")) / 4) + "px";
+							var centerTopPos = (parseInt(imgTopPos.replace(/px/, "")) + parseInt(imgHeight.replace(/px/, "")) / 4) + "px";
+
+							// make the img dropped in center of cursor
+							imgLeftPos = (parseInt(imgLeftPos.replace(/px/, "")) + parseInt(imgWidth.replace(/px/, "")) / 4) + "px";
+							imgTopPos = (parseInt(imgTopPos.replace(/px/, "")) + parseInt(imgHeight.replace(/px/, "")) / 4) + "px";
+
+							var image = '<a href="#"><img src="' + setImage + '"  alt="..." style="position : absolute; left:' + imgLeftPos + '; top :' + imgTopPos + '" class="thumbnail-redrag"><span class="name" style="display:none">' + name + '</span></a>';
+
+							$('#working-space').append(image);
+
+							// allow .thumbnail-redrag draggable
+							$('.thumbnail-redrag').draggable({
+								cursor: 'move',
+								revert: 'invalid',
+								zIndex: '99',
+							});
+
+							// click event on thumbnail-redrag
+							$('.thumbnail-redrag').on('click', function(event) {
+								event.preventDefault();
+								$('#tool').show('400');
+
+								$('#working-space').find('.tool-active').each(function(){
+									$(this).removeClass('tool-active');
+								});
+								$(this).addClass('tool-active');
+							});
+						}
+						// Process with thumbnail-redrag
+						else {
+						}						
+					}
+				});
+			});	
+		
+		});
+		
+		// Btn Remove Event
+		$('#btn-remove').on('click', function(event) {
+			event.preventDefault();
+			count-- ;
+
+			var index = 0; 
+			var tableRows = $('#summary tbody tr');
+			var item = $('.tool-active').parent().find('.name').text();
+
+			tableRows.each(function(){
+				var itemName = $(this).children('td').eq(1).html();
+				if(itemName == item){
+					$(this).remove();
+					return false;
+				}		
+			});
+
+			// Remove item from Bill
+			$("table tfoot th").each(function() {
+			    var totalsElement = $(this);
+
+			    if (totalsElement.hasClass("sumTotal")) {
+			        var sum = 0.0;
+			        totalsElement.parents("table").find("tbody tr").each(function() {
+			    		index++;
+			            sum += parseFloat($(this).children("td").eq(2).html());
+			            $(this).children("td").eq(0).html(index);
+			        });
+			        totalsElement.html(sum + '$');
+			    }
+			});
+
+			// Remove item from #working-space
+			$('.tool-active').parent().remove();
+		});
+
+		// Btn Rotate Event
+		$('#btn-rotate').on('click', function(event) {
+			event.preventDefault();
+			$('.tool-active').css({ 
+				rotate: '+=45'
+			});
+		});
+		/*End - Display the left panel with correct responding*/
+		// Btn Save Event
+		$('#btn-save').on('click', function(event) {
+			var workingSpace = $('#working-space').html();
+			var workingSpaceFile = new File([workingSpace], {type:'text/plain'});
+			var workingspaceName = 'Working-space.txt';
+
+			var summary = $('#summary').html();
+			var summaryFile = new File([summary], {type:'text/plain'});
+			var summaryName = 'Summary.txt';
+
+			var downloadLink = document.createElement("a");
+			downloadLink.download = workingspaceName;
+			downloadLink.innerHTML = "Download File";
+			downloadLink.href = window.webkitURL.createObjectURL(workingSpaceFile);
+			downloadLink.click();
+
+			var downloadLink1 = document.createElement("a");
+			downloadLink1.download = summaryName;
+			downloadLink1.innerHTML = "Download File";
+			downloadLink1.href = window.webkitURL.createObjectURL(summaryFile);
+			downloadLink1.click();
+		});
+
+		$('#btn-choose').on('change',function(event){
+			var files = event.target.files;
+
+		    for (var i = 0, f; f = files[i]; i++) {
+		    	var reader = new FileReader();
+		        reader.onload = (function(f) {
+		            return function(e) {
+		            	if(f.name == 'Working-space.txt')
+		            		$('#working-space').html(e.target.result);
+		            	else $('#summary').html(e.target.result);
+		     
+		            };
+		        })(f);
+		        reader.readAsText(f);
+			}
+		});
+
+		$('#homepage').click(function(event) {
+			window.location = 'HomeDesign.html';
+		});
+	});
+</script>
+</body>
+</html>
