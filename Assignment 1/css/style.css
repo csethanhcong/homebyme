@@ -147,7 +147,7 @@
 }
 /******************* Test *********************************/
 .working-space {
-	background: url('../Appartment/Temp/Cidrap.png') no-repeat;
+	background: url('../Appartment/Real/Cidrap.png') no-repeat;
 	min-height: 475px; /*dummy value -_-*/
 	/*z-index: -1;*/
 	opacity: .8; 
